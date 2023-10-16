@@ -1,0 +1,9 @@
+"pt-slave-repair" is a supplement to the original "pt-slave-restart" tool. It provides automatic repair for error data in MySQL master-slave replication, specifically targeting 1032 and 1062 errors. It also restores interrupted SQL thread replication.
+
+https://github.com/hcymysql/pt-slave-repair/
+
+shell> wget https://github.com/hcymysql/pt-slave-repair/archive/refs/heads/main.zip
+shell> unzip pt-slave-repair-main.zip
+shell> cd pt-slave-repair-main
+shell> chmod 755 pt-slave-repair
+shell> ./pt-slave-repair -H 192.168.198.239 -P 3346 -u repl -p hechunyang -d test
